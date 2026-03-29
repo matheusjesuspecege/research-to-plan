@@ -5,19 +5,9 @@ O diagrama de classes é um dos mais importantes e usados. Seu principal objetiv
 - Apresenta uma visão estática de como as classes estão organizadas, procupando-se em como definir a estrutura lógica delas.
 - Serve de apoio para a construção da maioria dos outros diagramas.
 
-**Tipos de diagrama de classes:**
-- **Modelo Conceitual:** consulte a seção **Diagrama de Classe Modelo Conceitual** para mais detalhes
-- **Modelo de Domínio:** consulte a seção **Diagrama de Classe Modelo de Domínio** para mais detalhes
-
-**Como é estruturado:** consulte a seção **Como é estruturado** para mais detalhes
-
----
-
 ### Como é estruturado
 
 O diagrama de classes é composto de suas classes e associações existentes entre elas, ou seja, os relacionamentos entre as classes.
-
----
 
 ### Diagrama de Classe Modelo de Domínio
 

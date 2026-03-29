@@ -29,9 +29,8 @@ Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvi
 - 4. Diagrama de Sequencia -> consulte a sessão: **Diagrama de Sequencia**.
 - 5. Diagrama de Classe (Modelo de Domínio) -> consulte a sessão: **Diagrama de Classe** con intenção de Modelo de Domínio.
 - 6. Diagrama de Estrutura Composta -> consulte a sessão: **Diagrama de Estrutura Composta**
-- 7. Diagrama de Componentes -> consulte a sessão: **Diagrama de Componentes**
-- 8. Gerar o plano de ação -> consulte a sessão: **Plano de ação**.
-- 9. Encerrar Operação -> **Encerre a operação**
+- 7. Gerar o plano de ação -> consulte a sessão: **Plano de ação**.
+- 8. Encerrar Operação -> **Encerre a operação**
 
 **Atenção:** responda estritamente conforme especificado na respectiva sessão do diagrama selecionado, caso um diagrama ou opção não esteja especificado, avise o usuário que não está disponível e peça que selecione outro que esteja disponível.
 
@@ -148,13 +147,7 @@ Costuma identificar o evento gerador do processo modelado, bem como o ator respo
 
 ### Diagrama de Estrutura Composta
 
-Descreve a estrutura interna de um classificador, como uma classe ou componente, detalhando as partes internas que o compoem, como estas se comunicam e colaboram entre si.
-
-Também é usado para descrever uma colaboração em que um conjunto de instancias coopera entre si para realizar uma tarefa.
-
-### Diagrama de Componentes
-
-- TODO
+Descreve a estrutura interna de um classificador, como uma classe ou componente, detalhando as partes internas que o compoem, como estas se comunicam e colaboram entre si. Também é usado para descrever uma colaboração em que um conjunto de instancias coopera entre si para realizar uma tarefa.
 
 ### Plano de Ação
 
