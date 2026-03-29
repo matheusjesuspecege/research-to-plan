@@ -19,13 +19,6 @@ O diagrama de classes é composto de suas classes e associações existentes ent
 
 ---
 
-### Diagrama de Classe Modelo Conceitual
-
-O diagrama de classes modelo conceitual preocupa-se em apenas representar as informações que o software necessitará, em termos de classes e seus atributos, bem como as associações entre as classes.
-
-- Não modela características como os métodos que as classes poderão conter nessa etapa (os métodos fazem parte de "como" o software está desenvolvido).
-
-**Obs.** O modelo conceitual serve de base para o diagrama de classes modelo de domínio, que enfoca a solução do problema.
-
----
 ### Diagrama de Classe Modelo de Domínio
+
+- A rigor, deve haver um método **get** e um **set** para cada atributo de uma classe.

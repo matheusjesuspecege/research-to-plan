@@ -5,7 +5,7 @@ description: "Converte research.md estruturado em artefatos de apoio ao desenvol
 
 **Esta SKILL converte os artefatos gerados no research.md em artefatos da fase de planejamento técnico, gera os seguintes artefatos de apoio:** 
 
-- Diagrama de Classes (conceitual/dominio) 
+- Diagrama de Classes (dominio) 
 - Diagrama de Sequencia
 - Plano ordenado de ação.
 
@@ -26,13 +26,12 @@ Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvi
 - 1. Jornada do Usuário -> consulta a sessão: **Jornada do Usuário**
 - 2. Diagrama de Caso de Uso -> consulte a sessão: **Diagrama de Caso de Uso**
 - 3. Diagrama Navegacional -> consulte a sessão: **Diagrama Navegacional**
-- 4. Diagrama de Classe (Modelo Conceitual) -> consulte a sessão: **Diagrama de Classe** com a intenção do modelo conceitual.
-- 5. Diagrama de Sequencia -> consulte a sessão: **Diagrama de Sequencia**.
-- 6. Diagrama de Classe (Modelo de Domínio) -> consulte a sessão: **Diagrama de Classe** con intenção de Modelo de Domínio.
-- 7. Diagrama de Estrutura Composta -> consulte a sessão: **Diagrama de Estrutura Composta**
-- 8. Diagrama de Componentes -> consulte a sessão: **Diagrama de Componentes**
-- 9. Gerar o plano de ação -> consulte a sessão: **Plano de ação**.
-- 10. Encerrar Operação -> **Encerre a operação**
+- 4. Diagrama de Sequencia -> consulte a sessão: **Diagrama de Sequencia**.
+- 5. Diagrama de Classe (Modelo de Domínio) -> consulte a sessão: **Diagrama de Classe** con intenção de Modelo de Domínio.
+- 6. Diagrama de Estrutura Composta -> consulte a sessão: **Diagrama de Estrutura Composta**
+- 7. Diagrama de Componentes -> consulte a sessão: **Diagrama de Componentes**
+- 8. Gerar o plano de ação -> consulte a sessão: **Plano de ação**.
+- 9. Encerrar Operação -> **Encerre a operação**
 
 **Atenção:** responda estritamente conforme especificado na respectiva sessão do diagrama selecionado, caso um diagrama ou opção não esteja especificado, avise o usuário que não está disponível e peça que selecione outro que esteja disponível.
 
@@ -83,6 +82,7 @@ Os artefatos utilizam o **mermaid** para geração dos diagramas, use o mais apr
 - Antes de gerar o diagrama, leia a documentação do mermaid e use a sintaxe especificada na documentação para evitar erros de sintaxe. O link da documentação pode ser encontrada logo abaixo ao lado do nome do diagrama.
 - Gere os diagramas priorizando a simplicidade visual, evitando efeitos decorativos que não agregam na compreensão humana, priorizando apenas cores para ajudar na compreensão.
 - Nomes de entidades, classes, atores, atributos, métodos devem ser escritos em inglês, todo o resto em portugues(pt-br).
+- Produza diagramas de fácil compreensão que possam ser entendidos por qualquer leitor, sem ser necessário conhecer uma determinada linguagem de programação para entendê-los.
 
 Todos os artefatos são gravados em formato de diagrama usando **mermaid**, nas seguintes referências:
 - **Jornada de Usuário:** https://mermaid.js.org/syntax/userJourney.html
@@ -129,17 +129,22 @@ O Diagrama Navegacional representa como as telas ou páginas de um sistema se co
 
 ### Diagrama de Caso de Uso
 
-**Consulte:** `./references/uc-diagram.md` para mais detalhes sobre **diagramas de classe**.
+**Consulte:** `./references/uc-diagram.md` para mais detalhes sobre **diagramas de caso de uso**.
 
 ### Diagramas de Classe
 
-**Consulte:** `./references/class-diagram.md` para mais detalhes sobre **diagramas de classe modelo conceitual/domínio**.
+**Consulte:** `./references/class-diagram.md` para mais detalhes sobre **diagramas de classe**.
 
 ### Diagrama de Sequencia
 
 O diagrama de sequencia se preocupa com a ordem temporal em que as mensagens são trocadasentre os objetos envolvidos em um determinado processo. Em geral, baseia-se no diagrama de caso de uso e apoia-se no diagrama de classes para determinar os objetos das classes envolvidas em um processo.
 
 Costuma identificar o evento gerador do processo modelado, bem como o ator responsável por esse evento, e determina como o processo deve se desenrolar e ser concluido por meio da chama de métodos disparados por mensagens enviadas entre os objetos.
+
+**Regras gerais:**
+- Use uma abordage mais detalhada para facilitar a compreensão.
+- Não se basear em nenhuma linguagem de programação específica, é o correto.
+- Não é necessário a rigor haver um método **get** e **set** para cada atributo de uma classe, uma vez que o diagrama é de nivel mais alto.
 
 ### Diagrama de Estrutura Composta
 
