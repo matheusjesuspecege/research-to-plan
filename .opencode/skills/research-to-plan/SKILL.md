@@ -34,7 +34,7 @@ Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvi
 - 9. Gerar o plano de ação -> consulte a sessão: **Plano de ação**.
 - 10. Encerrar Operação -> **Encerre a operação**
 
-**Atenção:** responda estritamente conforme especificado na respectiva sessão do diagrama selecionado, caso um diagrama não esteja especificado, avise o usuário que esse diagrama não está disponível e peça que selecione outro que esteja disponível.
+**Atenção:** responda estritamente conforme especificado na respectiva sessão do diagrama selecionado, caso um diagrama ou opção não esteja especificado, avise o usuário que não está disponível e peça que selecione outro que esteja disponível.
 
 ---
 
@@ -82,7 +82,7 @@ Os artefatos utilizam o **mermaid** para geração dos diagramas, use o mais apr
 **Importante:**
 - Antes de gerar o diagrama, leia a documentação do mermaid e use a sintaxe especificada na documentação para evitar erros de sintaxe. O link da documentação pode ser encontrada logo abaixo ao lado do nome do diagrama.
 - Gere os diagramas priorizando a simplicidade visual, evitando efeitos decorativos que não agregam na compreensão humana, priorizando apenas cores para ajudar na compreensão.
-- Nomes de entidades, atributos, métodos devem ser escritos em inglês, todo o resto em portugues(pt-br).
+- Nomes de entidades, classes, atores, atributos, métodos devem ser escritos em inglês, todo o resto em portugues(pt-br).
 
 Todos os artefatos são gravados em formato de diagrama usando **mermaid**, nas seguintes referências:
 - **Jornada de Usuário:** https://mermaid.js.org/syntax/userJourney.html
