@@ -30,9 +30,11 @@ Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvi
 - 5. Diagrama de Sequencia -> consulte a sessão: **Diagrama de Sequencia**.
 - 6. Diagrama de Classe (Modelo de Domínio) -> consulte a sessão: **Diagrama de Classe** con intenção de Modelo de Domínio.
 - 7. Diagrama de Estrutura Composta -> consulte a sessão: **Diagrama de Estrutura Composta**
-- 8. Diagrama de Dependência -> consulte a sessão: **Diagrama de Dependência**
+- 8. Diagrama de Componentes -> consulte a sessão: **Diagrama de Componentes**
 - 9. Gerar o plano de ação -> consulte a sessão: **Plano de ação**.
 - 10. Encerrar Operação -> **Encerre a operação**
+
+**Atenção:** responda estritamente conforme especificado na respectiva sessão do diagrama selecionado, caso um diagrama não esteja especificado, avise o usuário que esse diagrama não está disponível e peça que selecione outro que esteja disponível.
 
 ---
 
@@ -77,16 +79,22 @@ Os artefatos utilizam o **mermaid** para geração dos diagramas, use o mais apr
 
 ## Artefatos
 
+**Importante:**
+- Antes de gerar o diagrama, leia a documentação do mermaid e use a sintaxe especificada na documentação para evitar erros de sintaxe. O link da documentação pode ser encontrada logo abaixo ao lado do nome do diagrama.
+- Gere os diagramas priorizando a simplicidade visual, evitando efeitos decorativos que não agregam na compreensão humana, priorizando apenas cores para ajudar na compreensão.
+- Nomes de entidades, atributos, métodos devem ser escritos em inglês, todo o resto em portugues(pt-br).
+
 Todos os artefatos são gravados em formato de diagrama usando **mermaid**, nas seguintes referências:
 - **Jornada de Usuário:** https://mermaid.js.org/syntax/userJourney.html
 - **Diagrama Navegacional:** https://mermaid.js.org/syntax/flowchart.html
 - **Diagrama de Caso de Uso:** https://mermaid.js.org/syntax/flowchart.html
 - **Diagrama de Classe:** https://mermaid.js.org/syntax/classDiagram.html
 - **Diagrama de Sequencia:** https://mermaid.js.org/syntax/sequenceDiagram.html
-- **Diagrama de Estrutura Composta:** https://mermaid.js.org/syntax/block.html
+- **Diagrama de Estrutura Composta:** https://mermaid.js.org/syntax/flowchart.html
 
 **Onde salvar**
-- Os diagramas devem ser salvos na pasta da feature, ao lado da documentação do requisito, ex: `/specs/features/[nome]/[uc-1-nome-diagrama].mermaid`
+- **Global:** devem ser salvos na pasta da feature (raiz) ao lado do research.md, ex: `/specs/features/[nome]/[nome-diagrama-nome-feature].mermaid` 
+- **Individual:** devem ser salvos na pasta da feature, ao lado da documentação do requisito, ex: `specs/features/[nome]/[uc-1-nome-feature]/[uc-1-nome-feature-nome-diagrama].mermaid` 
 
 ### Jornada do Usuário 
 
@@ -102,6 +110,7 @@ O Diagrama e Jornada de Usuário descreve o caminho que o usuário percorre para
 **Importante:**
 - A jornada precisa mostrar a ordem das ações. Sequencia clara, fluxo linear ou com decisôes.
 - Pode incluir, fricções, erros, estados intermediários.
+- A sintax mermaid é `journey` e não `userJourney`.
 
 ### Diagrama Navegacional
 
