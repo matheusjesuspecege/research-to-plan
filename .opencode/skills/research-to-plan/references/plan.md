@@ -1,13 +1,13 @@
 ## 1. Plano de Ação
 
-O arquivo **plan.md** é o plano geral de implementação da feature, contem a ordem priorizada dos **use cases** que serão desenvolvidos, assim como o caminho para encontrar os artefatos necessários para a implementação frontend e backend. 
+O arquivo **plan.md** é a visão geral do plano de implantação da feature, ordenado por prioridade dos **use cases** que serão desenvolvidos, caminho para encontrar ou gerar os artefatos necessários para a implantação frontend e backend. 
 
 ### 1.1. Regras de Geração
 - A ordem deve seguir **dependências funcionais**, ou seja, se algo depende da existência de outra para funcionar, só deve ser implementada quando a outra tiver sido implementada.
     - **Consulte** a seção **6. Tipos de Relacionamento e Impacto na Prioridade** em `./uc-diagram.md` para mais detalhes.
 - Não gere os diagramas .mermaid, eles devem ser armazenados e consultados na memoria para servir de base para encontrar os artefatos necessarios.  
 - Para descobrir quais contratos (types, services, componentes etc...) que devem ser gerados, primeiro gere e armazene na memória o diagrama necessário usando os artefatos que podem ser encontrados na seção **Artefatos**. Não gere os arquivos e diagramas finais, apenas consulte na memoria. 
-- Salve tudo relacionado a interfaces frontend utilizando **Atomic Design** como metodologia, não precisa usar nomes como atomo, molecula etc... apenas siga a filosofia da metodologia como base.
+- Salve tudo relacionado a interfaces frontend utilizando **Atomic Design** como metodologia, não precisa usar nomes como atomo, molecula etc... (**use o nome do componente real**), apenas siga a filosofia da metodologia como base.
 
 ### 1.2. Modelo de Dependência Estrutural
 
@@ -32,16 +32,27 @@ Essa estrutura permite derivar **camadas naturais de implementação** para perm
 
 Use a **Estrutura do Arquivo** como modelo para salvar.
 
-- Salve os contratos gerais que serão utilizados pelo frontend e backend no arquivo **contracts.md** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-contracts.md`.
-- Salve os serviços, e tudo relacionado a backend no arquivo **backend.md** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-backend.md`.
-- Salve os componentes, interfaces e tudo relacionado a frontend no arquivo **frontend.md** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-frontend.md`
-
 ### Estrutura do Arquivo
 
+**Obs:** O desenvolvedor precisa ter uma visão tatica clara de tudo que será feito, sem nenhuma duvida. 
+    - para cada caso de uso, adicione instruções de como o desenvolvedor poderá gerar os artefatos necessários para implementação, principalmente os diagramas.
+    - Informe ao usuário resumidamente como obter o artefato necessário ex: Diagramas.
+    - Insira links de referencias uteis que agregam valor na implementação da feature em cada topico específico. 
+    - Priorize a legibilidade e entendimento humano, use tabelas e recursos visuais com moderação.
+    - Use como referência os **Critérios de Aceite** do caso de uso.
+    - Separe claramente frontend de backend.
+
 ```markdown
-# Plano de Implantação - [feature]
+# Plano Tático de Implantação - [feature]
+
+Breve resumo do plano
 
 ## Ordem de Implementação dos Casos de Uso
 
-Nome do caso de uso, e um link de referencia para encontra-lo, assim como todos os artefatos necessários para implementação, identificados pelo tipo e hierarquia.
+Liste os casos de uso ordenados corretamente por ordem de prioridade de implementação. 
+
+## O que pode ser executado em paralelo
+
+Liste os casos de uso que podem ser executados simultaneamente.
+
 ```
