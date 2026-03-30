@@ -151,26 +151,6 @@ Descreve a estrutura interna de um classificador, como uma classe ou componente,
 
 ### Plano de Ação
 
-Geração dos artefatos necessários base para a implementação da feature, iremos gerar todos os contatos, serviços, types, interfaces, e todos os artefatos necessários para a implementação frontend e backend. Servirá de base para geração de todos os cenários BDD que posteriormente serão transformados nos cenários TDD para implementação do código.
-
-**regras de geração:**
-
-- Sempre ordene por dependencia, ou seja, se algo depende da existência de outra para funcionar, só deve ser implementada quando a outra tiver sido implementada.
-- Para descobrir quais contratos (types, services, componentes etc...) que devem ser gerados, primeiro gere o diagrama necessário usando os artefatos que podem ser encontrados na seção **Artefatos**. Não gere os arquivos e diagramas finais, apenas gere na memoria para consulta para encontrar todos os contratos. 
-- Adicione cenários usando a filosofia da **Lei de Murphy** (Se algo pode dar errado, dará).
-- Os cenários BDD devem ser salvos em seus proprios arquivos frontend e backend, no formato .feature (não é markdown).
-- Não gere os diagramas .mermaid, eles devem ser armazenados e consultados na memoria para servir de base de geração dos arquivos necessarios.  
-- Salve tudo relacionado a interfaces frontend utilizando **Atomic Design** como metodologia, não precisa usar nomes como atomo, molecula etc... ordene e siga a metodologia atomic design como base.
-  - Coloque os types, interfaces, serviços que o componente irá consumir sempre proximo para facilitar a consulta.
-- Gere tambem o arquivo de implementação dos testes frontend (cenários BDD gerados anteriormente), somente com a assinatura sem implementar, com comentários TODO usando a sintaxe do playwright
-  - Cada cenário BDD é um cenário de teste seguindo a filosofia de testes AAA.
-
-**Onde salvar:**
-- Salve os contratos gerais que serão utilizados pelo frontend e backend no arquivo **contracts.md** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-contracts.md`.
-- Salve os serviços, e tudo relacionado a backend no arquivo **backend.md** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-backend.md`.
-- Salve os componentes, interfaces e tudo relacionado a frontend no arquivo **frontend.md** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-frontend.md`
-- Salve os cenários BDD do frontend no formato Gherkin no arquivo **frontend.feature.md** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-frontend.feature` ordenado pela ordem de implementação que pode ser encontrada no arquivo **[uc-01]-frontend.md**
-- Salve os cenários BDD do backend no formato Gherkin no arquivo **backend.feature.md** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-backend.feature` ordenado pela ordem de implementação que pode ser encontrada no arquivo **[uc-01]-backend.md**
-- Salve somente a assinatura dos cenários de testes no arquivo **frontend.spec.ts** ao lado da documentação do caso de uso da feature, ex: `/specs/features/[nome]/[uc-01-nome]/[uc-01]-frontend.spec.ts` seguindo a mesma ordem definida no BDD.
+**Consulte:** `./references/plan.md` para mais detalhes sobre o arquivo de **Plano de Ação**.
 
 ---

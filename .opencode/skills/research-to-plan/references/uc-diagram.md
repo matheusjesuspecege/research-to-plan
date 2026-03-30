@@ -104,7 +104,7 @@ Aplica os principios de **herança** da orientação a objetos permitindo que os
 
 ### 3.2. Inclusão
 
-A associação de **inclusão** é usada quando existe um cenário, situação ou rotina comum a mais de um caso de uso. Quando isso ocorre, a documentação dessa rotina é oclocada em um caso de uso específico para que outros casos de uso utilizem esse serviço, evitando-se descrever uma mesma sequencia de passos em vários casos de uso, poupando tempo e facilitando futuras manutenções.
+A associação de **inclusão** é usada quando existe um cenário, situação ou rotina comum a mais de um caso de uso. Quando isso ocorre, a documentação dessa rotina é colocada em um caso de uso específico para que outros casos de uso utilizem esse serviço, evitando-se descrever uma mesma sequencia de passos em vários casos de uso, poupando tempo e facilitando futuras manutenções.
 
 - Os relacionamentos de inclusão indicam uma obrigatoriedade, ou seja, quando um determinado caso de uso tem um relacionamento de inclusão com outro, a execução do primeiro obriga também a execução do segundo. pode ser comparado a uma **sub-rotina**.
 - É representado pelo estereótipo que pode ser encontrado na seção **4. Estereótipos**.
@@ -157,9 +157,46 @@ Os estereótipos possibilitam certo grau de extensibilidade aos componentes ou a
 
 **Obs.** Existe uma grande quantidade de estereótipos que podem ser aplicados aos mais diversos componentes da UML. O engenheiro de software pode criar seus proprios estereótipos se necessário. Use a documentação oficial da UML como **referência**: https://www.omg.org/uml/ exibindo os estereótipos de maneira textual.
 
+---
+
 ## 5. Fronteira de Sistema
 
 Uma fronteira de sistema indentifica um classificador que contém um conjunto de casos de uso. Permite identificar um subsistema ou mesmo um sistema completo, além de destacar o  que está contido no sistema e o que não está.
 
 - Atores são externos ao sistema, enquanto casos de uso são internos.
 - É representada por um retêngulo envolvendo os casos de uso nela contidos, além de um título que a descreve.
+
+---
+
+## 6. Tipos de Relacionamento e Impacto na Prioridade
+
+- **include:** indica que um caso de uso **sempre executa outro caso de uso como parte do seu fluxo**, ou seja, o caso de uso incluido deve ser implementado antes do caso de uso base. **Prioridade Alta**.
+- **extend:** Indica comportamento **opcional ou condicional**. **Prioridade Baixa**.
+- **Generalização:** Representa **abstração de comportamento comum** entre multilpos casos de uso. **Prioridade Média**.
+- **Especialização:** São **implementações concretas do caso de uso generalizado**. **Prioridade Média**.
+
+**Combinando todas as relações, a ordem de implementação recomendada é:**
+
+```
+1. Casos de uso incluídos (<<include>>)
+2. Casos de uso base
+3. Casos de uso generalizados
+4. Casos especializados
+5. Casos de uso de extensão (<<extend>>)
+```
+
+**Ou em forma simplificada:**
+
+```
+include
+↓
+base
+↓
+generalização
+↓
+especialização
+↓
+extend
+```
+
+**Consulte** a seção **3. Associações** para mais detalhes. 
