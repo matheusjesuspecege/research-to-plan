@@ -34,13 +34,13 @@ Use a **Estrutura do Arquivo** como modelo para salvar.
 
 ### Estrutura do Arquivo
 
-**Obs:** O desenvolvedor precisa ter uma visão tatica clara de tudo que será feito, sem nenhuma duvida. 
-    - para cada caso de uso, adicione instruções de como o desenvolvedor poderá gerar os artefatos necessários para implementação, principalmente os diagramas.
-    - Informe ao usuário resumidamente como obter o artefato necessário ex: Diagramas.
-    - Insira links de referencias uteis que agregam valor na implementação da feature em cada topico específico. 
-    - Priorize a legibilidade e entendimento humano, use tabelas e recursos visuais com moderação.
-    - Use como referência os **Critérios de Aceite** do caso de uso.
-    - Separe claramente frontend de backend.
+- O desenvolvedor precisa ter uma visão tatica clara de tudo que será feito, sem nenhuma duvida: 
+- para cada caso de uso, adicione instruções de como o desenvolvedor poderá gerar os artefatos necessários para implementação, principalmente os diagramas.
+- Informe ao usuário resumidamente como obter o artefato necessário ex: Diagramas.
+- Insira links de referencias uteis que agregam valor na implementação da feature em cada topico específico. 
+- Priorize a legibilidade e entendimento humano, use tabelas e recursos visuais com moderação.
+- Use como referência os **Critérios de Aceite** do caso de uso ordenados por dependência de implementação.
+- Separe claramente frontend de backend.
 
 ```markdown
 # Plano Tático de Implantação - [feature]
@@ -54,5 +54,4 @@ Liste os casos de uso ordenados corretamente por ordem de prioridade de implemen
 ## O que pode ser executado em paralelo
 
 Liste os casos de uso que podem ser executados simultaneamente.
-
 ```
