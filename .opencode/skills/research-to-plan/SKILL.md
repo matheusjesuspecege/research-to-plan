@@ -52,8 +52,9 @@ Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvi
 
 ## Regras de Geração dos Artefatos
 
-Os artefatos utilizam o **mermaid** para geração dos diagramas, use o mais apropriado.
+Os artefatos utilizam o **mermaid** e **plantuml** para geração dos diagramas, use o mais apropriado.
 - Consulte a documentação do **mermaid** para obter referencia: https://mermaid.js.org/intro/
+- Consulte a documentação do **plantuml** para obter referencia: https://plantuml.com/
 
 **A geração dos artefatos podem ser realizadas de duas maneiras:**
 - **global:** consulte a seção **Geração Global** 
@@ -61,14 +62,14 @@ Os artefatos utilizam o **mermaid** para geração dos diagramas, use o mais apr
   
 ### Geração Global
 
-- **Localização:** Todos os artefatos globais devem ser salvos na pasta da feature, ao lado do **research.md** no seguinte formato de nomenclatura: `[uc-01-type].mermaid`.
+- **Localização:** Todos os artefatos globais devem ser salvos na pasta da feature, ao lado do **research.md** no seguinte formato de nomenclatura: `[uc-01-type].[mermaid/plantuml]`.
 
 **O que deve ser gerado:**
 - Gera o artefato mostrando a visão geral da feature, onde tudo relacionado a feature é mostrado em um unico artefato global para o humano ter uma visão geral dos proximos artefatos individuais que ele pode executar sob demanda.
 
 ### Geração Individual
 
-- **Localização:** Todos os artefatos individuais devem ser salvos na pasta do use case corresponde, ao lado da **especificação do caso de uso** no seguinte formato de nomenclatura: `/specs/features/[feature]/[uc-01]/[uc-01-type].mermaid`
+- **Localização:** Todos os artefatos individuais devem ser salvos na pasta do use case corresponde, ao lado da **especificação do caso de uso** no seguinte formato de nomenclatura: `/specs/features/[feature]/[uc-01]/[uc-01-type].[mermaid/plantuml]`
 
 **O que deve ser gerado:**
 - Gera o artefato mostrando a visão especifica da feature, onde tudo relacionado a feature específica é mostrado em um unico artefato, para o humano ter uma visão geral dos proximos passos individuais que ele pode executar sob demanda, usando a visão global feita em outro passo como apoio e consulta para tomar as melhores decisôes.
@@ -83,17 +84,17 @@ Os artefatos utilizam o **mermaid** para geração dos diagramas, use o mais apr
 - Nomes de entidades, classes, atores, atributos, métodos devem ser escritos em inglês, todo o resto em portugues(pt-br).
 - Produza diagramas de fácil compreensão que possam ser entendidos por qualquer leitor, sem ser necessário conhecer uma determinada linguagem de programação para entendê-los.
 
-Todos os artefatos são gravados em formato de diagrama usando **mermaid**, nas seguintes referências:
+Todos os artefatos são gravados em formato de diagrama usando **mermaid** ou **plantuml**, nas seguintes referências:
 - **Jornada de Usuário:** https://mermaid.js.org/syntax/userJourney.html
 - **Diagrama Navegacional:** https://mermaid.js.org/syntax/flowchart.html
-- **Diagrama de Caso de Uso:** https://mermaid.js.org/syntax/flowchart.html
+- **Diagrama de Caso de Uso:** https://plantuml.com/use-case-diagram
 - **Diagrama de Classe:** https://mermaid.js.org/syntax/classDiagram.html
-- **Diagrama de Sequencia:** https://mermaid.js.org/syntax/sequenceDiagram.html
+- **Diagrama de Sequencia:** https://plantuml.com/sequence-diagram
 - **Diagrama de Estrutura Composta:** https://mermaid.js.org/syntax/flowchart.html
 
 **Onde salvar**
-- **Global:** devem ser salvos na pasta da feature (raiz) ao lado do research.md, ex: `/specs/features/[nome]/[nome-diagrama-nome-feature].mermaid` 
-- **Individual:** devem ser salvos na pasta da feature, ao lado da documentação do requisito, ex: `specs/features/[nome]/[uc-01-nome-feature]/[uc-1-nome-diagrama].mermaid` 
+- **Global:** devem ser salvos na pasta da feature (raiz) ao lado do research.md, ex: `/specs/features/[nome]/[nome-diagrama-nome-feature].[mermaid/plantuml]` 
+- **Individual:** devem ser salvos na pasta da feature, ao lado da documentação do requisito, ex: `specs/features/[nome]/[uc-01-nome-feature]/[uc-1-nome-diagrama].[mermaid/plantuml]` 
 
 ### Jornada do Usuário 
 
