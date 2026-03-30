@@ -3,20 +3,28 @@ name: research-to-plan
 description: "Converte research.md estruturado em artefatos de apoio ao desenvolvimento. Use esta skill quando o research.md já estiver aprovado e pronto para a proxima fase de planejamento."
 ---
 
-**Esta SKILL converte os artefatos gerados no research.md em artefatos da fase de planejamento técnico, gera os seguintes artefatos de apoio:** 
+# Resumo
 
-- Diagrama de Classes (dominio) 
+Esta SKILL converte os artefatos gerados no research.md em artefatos da fase de planejamento técnico, gera os seguintes artefatos de apoio:** 
+
+- Jornada do Usuário
+- Diagrama de Caso de Uso
+- Diagrama Navegacional
 - Diagrama de Sequencia
-- Plano ordenado de ação.
+- Diagrama de Classes (dominio) 
+- Diagrama de Estrutura Composta
+- Documento de Referência para Implantação
+- Plano de ação
 
 Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvido, ou seja, contratos, serviços, tecnologias, testes e outros artefatos taticos que serão necessários para iniciar a implementação.
 
 ---
 
-# Regra Fundamental
+## Regra Fundamental
 
 - **SIGA O REQUISITO ORIGINAL EXATAMENTE COMO FORNECIDO. NÃO INVENTE, NÃO ADICIONE E NÃO SUPONHA NADA QUE NÃO ESTEJA EXPRESSAMENTE DEFINIDO NO RESEARCH.md. recebido**.
-- Se o research.md não menciona algo, NÃO inclua. Se há ambiguidade, pergunte ao usuário antes de supor.
+- Se o **research.md** não menciona algo, **NÃO inclua**. Se há ambiguidade, pergunte ao usuário antes de supor.
+- Se o **research.md** possuir alguns dos **status:** (proposing, prototyping, refinement), **NÃO** inicie a implementação, informe ao usuário a situação e **Encerre a Operação**.  
 
 ---
 
@@ -30,7 +38,8 @@ Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvi
 - 5. Diagrama de Classe (Modelo de Domínio) -> consulte a sessão: **Diagrama de Classe** con intenção de Modelo de Domínio.
 - 6. Diagrama de Estrutura Composta -> consulte a sessão: **Diagrama de Estrutura Composta**
 - 7. Gerar o plano de ação -> consulte a sessão: **Plano de ação**.
-- 8. Encerrar Operação -> **Encerre a operação**
+- 8. Documento de Estudo Para Implementação -> consulte a sessão: **Documento de Referência para Implantação**.
+- 9. Encerrar Operação -> **Encerre a operação**
 
 **Atenção:** responda estritamente conforme especificado na respectiva sessão do diagrama selecionado, caso um diagrama ou opção não esteja especificado, avise o usuário que não está disponível e peça que selecione outro que esteja disponível.
 
@@ -154,4 +163,18 @@ Descreve a estrutura interna de um classificador, como uma classe ou componente,
 
 **Consulte:** `./references/plan.md` para mais detalhes sobre o arquivo de **Plano de Ação**.
 
+### Documento de Referência para Implantação
+
+Este é um documento descreve a visão **tática** usado exclusivamente pelos desenvolvedores para ter um ponto de partida inicial dos passos a passos que serão necessários para implementar a feature, ou seja, toda a sequencia de passos, serviços que serão criados, componentes de interface, e tudo relacionado a feature que será desenvolvida para que todos os critérios de aceite sejam cumpridos com a máxima eficacia.
+
+- Para cada item, deverá ter o link da documentação oficial da ferramenta, processo, metodologia que foi usada como referência.
+  - Antes de gravar o link da documentação, verifique se o link está funcionando e se o conteudo realmente existe na documentação de referencia.
+  - Adicione a linha, pagina ou item exato da documentação para ser localizado rapidamente.
+- Deve haver um plano passo a passo claro, com code snippets sempre que for necessario para ajudar a compreensão humana.
+- Deve ser escrito em uma linguagem simples focada em desenvolvedores juniores.
+
+**Importante:** 
+  - Deve ser gerado um arquivo exclusivo e especifico para cada caso de uso, sempre ao lado do arquivo do requisito para facilitar o uso.
+  - Adicione uma mensagem curta, objetiva e informativa abaixo do titulo de cada sessão que tenha **code-snipet**, informando ao desenvolvedor que o código é apenas uma ideia de implementação que funciona, porém não representa os padrôes de código real da equipe ou projeto, para que ele implemente seguindo a propria forma de trabalhar.
+  
 ---
