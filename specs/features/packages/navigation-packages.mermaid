@@ -1,0 +1,31 @@
+flowchart TB
+    subgraph Apps
+        direction LR
+        O[Organizer App]
+        B[Backoffice App]
+    end
+    
+    subgraph Package
+        D[DashboardPage]
+    end
+    
+    subgraph Pages
+        direction LR
+        P1[Dashboard]
+        P2[Eventos]
+        P3[Inscrições]
+    end
+    
+    O -->|acessa menu| P1
+    B -->|acessa menu| P1
+    P1 -->|visualiza| D
+    P1 -->|navega| P2
+    P1 -->|navega| P3
+    
+    D -->|mostra| Charts[Gráficos]
+    D -->|mostra| Tables[Tabelas]
+    D -->|mostra| Cards[Cards de métricas]
+    
+    style D fill:#e1f5fe,stroke:#01579b
+    style O fill:#fff3e0,stroke:#e65100
+    style B fill:#fff3e0,stroke:#e65100
