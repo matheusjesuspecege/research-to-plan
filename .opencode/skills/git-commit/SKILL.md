@@ -31,6 +31,7 @@ Esta SKILL commita o proximo critério de aceite do **use case** que está sendo
 
 1. Solicite ao usuario o nome da feature, e o nome do caso de uso que está trabalhando, encerre caso a feature não exista.
 2. Leia os critérios de aceite da feature na documentação do caso de uso **uc-*.md** que está localizado na pasta especifica do caso de uso.
+3. Use a SKILL **spec-sync** para verificar se o que foi implementado no código está seguindo a especificação corretamente. **Não realize commit se tiver alguma inconsistência** exija que o usuário corrija as inconsistências antes de continuar.
 3. Marque cada critério de aceite como verificado e realize o commit das alterações seguindo os padrôes de commit do projeto. A mensagem do commit deve ser o nome do critério de aceite que foi verificado.
 
 ---
