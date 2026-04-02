@@ -21,7 +21,7 @@ Esta SKILL commita o proximo critério de aceite do **use case** que está sendo
 - Consulte os 3 ultimos commits no historico do git caso necessário.
 - Critérios já marcados com [x] não devem ser verificados novamente.
 - **Verificar todos os critérios restantes**.
-- Caso o **uc** esteja com todos os critérios de aceite verificado, o edite o **plan.md** identificando o caso de uso como concluído.
+- Caso o **uc** esteja com todos os critérios de aceite verificado, edite o **plan.md** identificando tudo relacionado ao caso de uso como concluído.
 
 --- 
 
