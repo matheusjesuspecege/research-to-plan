@@ -15,6 +15,7 @@ Esta SKILL tem o objetivo de preencher o template de pull request, para que o de
 - Se há ambiguidade, pergunte ao usuário antes de prosseguir.
 - Gere um diagrama navegacional em **mermaid** para que o dev possa incluir facilmente na descrição. 
 - Sugira um titulo eficaz e enxuto para descrever o que foi feito.
+- Remova os itens que não foram marcados (checked) pois não estão no escopo da PR.
 - O tom de voz da descrição deve ser em terceira pessoa estilo **realizado**.
 - Não grave arquivos, apenas retorne no proprio terminal para que o usuário possa copiar e colar no azure devops.
 
