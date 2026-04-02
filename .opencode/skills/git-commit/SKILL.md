@@ -11,9 +11,17 @@ Esta SKILL commita o proximo critério de aceite do **use case** que está sendo
 
 ## Regras Fundamentais
 
+- **SIGA O REQUISITO ORIGINAL EXATAMENTE COMO FORNECIDO. SEM INVENTAR, ADICIONAR OU SUPOR ALGO QUE NÃO ESTEJA EXPRESSAMENTE DEFINIDO NA US.**
+- Se há ambiguidade, pergunte ao usuário antes de prosseguir.
 - A ordem das casos de uso pode ser encontrada no arquivo **plan.md** da feature.
 - Os critérios de aceite devem ser verificados na documentação do caso de uso especifico.
-- Marque como verificado o primeiro critério do caso de uso que ainda não foi marcado.
+- Editar **uc-*.md** marcando [x] nos critérios
+- Leia os critério de aceite do caso de uso, e compare com o que foi implementado para saber quais critérios de aceite deve verificar.
+- Todos os critérios de aceite devem ser verificados se devem ou não serem marcados como concluido, baseado na analise das alterações que foram feitas.
+- Consulte os 3 ultimos commits no historico do git caso necessário.
+- Critérios já marcados com [x] não devem ser verificados novamente.
+- **Verificar todos os critérios restantes**.
+- Caso o **uc** esteja com todos os critérios de aceite verificado, o edite o **plan.md** identificando o caso de uso como concluído.
 
 --- 
 
@@ -23,7 +31,7 @@ Esta SKILL commita o proximo critério de aceite do **use case** que está sendo
 
 1. Solicite ao usuario o nome da feature, e o nome do caso de uso que está trabalhando, encerre caso a feature não exista.
 2. Leia os critérios de aceite da feature na documentação do caso de uso **uc-*.md** que está localizado na pasta especifica do caso de uso.
-3. Marque o critério de aceite como verificado e realize o commit das alterações seguindo os padrôes de commit do projeto. A mensagem do commit deve ser o nome do critério de aceite que foi verificado.
+3. Marque cada critério de aceite como verificado e realize o commit das alterações seguindo os padrôes de commit do projeto. A mensagem do commit deve ser o nome do critério de aceite que foi verificado.
 
 ---
 
