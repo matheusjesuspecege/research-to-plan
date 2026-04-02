@@ -32,7 +32,7 @@ Para o **MCP do Azure DevOps** funcionar corretamente é necessário configurar 
 4. Caso o usuário não possua as informações, mostre no terminal o tutorial que pode ser encontrado na sessão: **Tutorial para Devs**
 6. Com os **pré-requisitos** em mãos, extraia as informações necessárias e prossiga
 7. Armazene a variavel de ambiente local necessária, com o conteudo do **Personal Access Token (PAT)**, usando as instruções que podem ser encontradas na sessão **Variavel de Ambiente**
-8. Conecte-se no MCP do Azure DevOps e informe ao usuário que se conectou com sucesso, e lista as opções de uso disponiveis que podem ser encontradas na sessão: **Funções disponíveis**
+8. Conecte-se no MCP do Azure DevOps e informe ao usuário que se conectou com sucesso, e liste os comandos disponiveis para uso que podem ser encontradas na sessão: **Funções disponíveis**
 
 **Obs:** responda somente baseado no contexto do projeto ao qual foi informado pelo usuário.
 
