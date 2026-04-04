@@ -65,8 +65,8 @@ Esta SKILL converte requisitos abstratos escritos por Product Owners em um resea
 - Primeiro, leia o conteúdo atual da feature para obter contexto.
 - Execute a seção **Opcoes do terminal** com a intenção de **atualizar uma feature existente** solicitando ao usuário que atualize o arquivo **prd.md** com as novas mudanças que serão atualizadas
 - Analise o arquivo **prd.md** que foi atualizado com as atualizações forneceridas pelo usuário.
-- Analise o **research.md** atual da feature e compare tudo que deverá ser atualizado para manter os arquivos sincronizados e atualizados corretamente, com a maxima atenção para não remover o conteúdo atual que já está aprovado, ou seja, inserindo e adaptando somente o que for realmente necessário.
-- Grave o conteúdo atualizado no arquivo **research.md** e em todos os **Casos de Uso** que precisam ser atualizados usando de recursos visuais que facilite a compreensão humana.
+- Analise o **research.md** e **plan.md** (caso existir) atual da feature e compare tudo que deverá ser atualizado para manter os arquivos sincronizados e atualizados corretamente, com a maxima atenção para não remover o conteúdo atual que já está aprovado, ou seja, inserindo e adaptando somente o que for realmente necessário.
+- Grave o conteúdo atualizado nos arquivos **research.md**, **plan.md** e em todos os **Casos de Uso** que precisam ser atualizados usando de recursos visuais que facilite a compreensão humana.
 
 ---
 

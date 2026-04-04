@@ -1,6 +1,6 @@
 ---
 name: spec-sync
-description: "Esta SKILL analisa a árvore do git para casos de uso concluídos de uma feature, comparando a implementação real com as especificações (prd.md, research.md, uc-*.md), e indentifica inconsistências entre o código e as specs (sendo as specs a fonte de verdade). Use após concluir um ou mais casos de uso ou critério de aceite para verificar se o que foi implementado está alinhado com o que foi especificado.
+description: Esta SKILL analisa a árvore do git para casos de uso concluídos de uma feature, comparando a implementação real com as especificações. Use após concluir um ou mais casos de uso ou critério de aceite para verificar se o que foi implementado está alinhado com o que foi especificado.
 ---
 
 # Introdução
