@@ -14,6 +14,7 @@ Esta SKILL converte os artefatos gerados no research.md em artefatos da fase de 
 - Diagrama de Classes (dominio) 
 - Diagrama de Estrutura Composta
 - Plano de Ação Tático
+- Documento de Referência para Implementação
 
 Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvido, ou seja, contratos, serviços, tecnologias, testes e outros artefatos taticos que serão necessários para iniciar a implementação.
 
@@ -37,7 +38,8 @@ Esses artefatos servem de apoio ao planejamento do que precisará ser desenvolvi
 - 5. Diagrama de Classe (Modelo de Domínio) -> consulte a sessão: **Diagrama de Classe** con intenção de Modelo de Domínio.
 - 6. Diagrama de Estrutura Composta -> consulte a sessão: **Diagrama de Estrutura Composta**
 - 7. Gerar o Plano de Ação Tático -> consulte a sessão: **Plano de Ação Tático**.
-- 8. Encerrar Operação -> **Encerre a operação**
+- 8. Documento de Referência para Implementação -> consulte a sessão: **Documento de Referência para Implementação**.
+- 9. Encerrar Operação -> **Encerre a operação**
 
 **Atenção:** responda estritamente conforme especificado na respectiva sessão do diagrama selecionado, caso um diagrama ou opção não esteja especificado, avise o usuário que não está disponível e peça que selecione outro que esteja disponível.
 
@@ -160,5 +162,23 @@ Descreve a estrutura interna de um classificador, como uma classe ou componente,
 ### Plano de Ação Tático
 
 **Consulte:** `./references/plan.md` para mais detalhes sobre o arquivo de **Plano de Ação Tático**.
+
+### Documento de Referência para Implementação
+
+Este é um documento que descreve a visão **operacional** usado exclusivamente pelos desenvolvedores para ter um ponto de partida inicial dos passos a passos que serão necessários para implementar a feature, ou seja, toda a sequencia de passos, serviços que serão criados, componentes de interface, e tudo relacionado a feature que será desenvolvida para que todos os critérios de aceite sejam cumpridos com a máxima eficacia.
+
+**Nome do arquivo:** implement-plan-reference.md
+
+**Obs:** use como referencia para geração o arquivo **plan.md** que está na raiz do projeto, ao lado do **research.md**, caso não exista, informe ao usuário, e **encerre a operação**, caso exista, prossiga. 
+
+- Para cada item, deverá ter o link da documentação oficial da ferramenta, processo, metodologia que foi usada como referência.
+  - Antes de gravar o link da documentação, verifique se o link está funcionando e se o conteudo realmente existe na documentação de referencia.
+  - Adicione a linha, pagina ou item exato da documentação para ser localizado rapidamente.
+- Deve haver um plano passo a passo claro, com code snippets sempre que for necessario para ajudar a compreensão humana.
+- Deve ser escrito em uma linguagem simples focada em desenvolvedores juniores.
+
+**Importante:** 
+  - Deve ser gerado um arquivo exclusivo e especifico para cada caso de uso, sempre ao lado do arquivo do requisito para facilitar o uso.
+  - Adicione uma mensagem curta, objetiva e informativa abaixo do titulo de cada sessão que tenha **code-snipet**, informando ao desenvolvedor que o código é apenas uma ideia de implementação que funciona, e pode não representar os padrôes de código real da equipe ou projeto (**gere uma mensagem para que ele implemente seguindo a propria forma de trabalhar e consulte a referência da documentação fornecida para estudo**).
 
 ---
